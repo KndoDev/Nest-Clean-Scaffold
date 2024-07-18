@@ -14,7 +14,8 @@ export class TypeOrmConfigService implements TypeOrmOptionsFactory {
       username: this.configService.get<string>('DB_USER'),
       password: this.configService.get<string>('DB_PASSWORD'),
       database: this.configService.get<string>('DB_NAME'),
-      synchronize: true, // Cambia a false en producción
+      autoLoadEntities: true,
+      synchronize: true,
     };
   }
 }

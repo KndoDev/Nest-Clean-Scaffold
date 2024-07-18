@@ -13,11 +13,7 @@
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "paths": {
-      "@src/*": ["src/*"],
-      "@shared/*": ["src/shared/*"],
-      "@tests/*": ["tests/*"]
-    },
+
   },
   "exclude": ["node_modules", "dist"]
 }
