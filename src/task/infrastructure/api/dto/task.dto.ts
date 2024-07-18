@@ -7,6 +7,7 @@ import {
   IsOptional,
   IsString,
 } from 'class-validator';
+import { Type } from 'class-transformer';
 
 export class taskDto implements TaskEntity {
   @IsString()
@@ -22,9 +23,11 @@ export class taskDto implements TaskEntity {
   files!: string[];
 
   @IsDate()
+  @Type(() => Date)
   date_init!: Date;
 
   @IsDate()
+  @Type(() => Date)
   date_end!: Date;
 
   @IsString()
